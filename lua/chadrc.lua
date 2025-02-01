@@ -6,13 +6,14 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "tundra",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+M.plugins = "custom.plugins"
 
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
