@@ -6,12 +6,22 @@ return {
   },
 
   -- These are some examples, uncomment them if you want to see them work!
+
+  -- LSP config
   {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
     end,
   },
+
+  -- NeoTree config
+  -- {
+  --   "neovim/nvim-tree.lua",
+  --   config = function()
+  --     require "configs.nvimtree"
+  --   end,
+  -- },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

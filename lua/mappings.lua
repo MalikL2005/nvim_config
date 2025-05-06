@@ -3,6 +3,7 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
+local api = require("nvim-tree.api")
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
@@ -16,5 +17,6 @@ map({"n", "i"}, "<C-e>", "<ESC>:lua vim.diagnostic.open_float()<ENTER>:lua vim.d
 -- on neo tree: cd to parent
 map("n", "<leader>P", ":cd ..<ENTER>", {desc = "Neotree: move to parent"})
 
+map("n", "-", api.tree.change_root_to_node, {desc = "custom: Nvim-tree -> cd to selected dir"})
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
