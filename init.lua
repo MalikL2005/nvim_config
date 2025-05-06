@@ -31,10 +31,6 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
--- options
-vim.opt.relativenumber = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
 
 vim.schedule(function()
   require "mappings"
